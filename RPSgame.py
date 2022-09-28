@@ -32,4 +32,5 @@ while True:
         print("Enter a valid answer.")
 
     total_turns.append(restart)
-    print(f"You have played {len(total_turns)} times.")
+    
+print(f"You have played {len(total_turns)} times.")
