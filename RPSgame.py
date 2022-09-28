@@ -1,10 +1,14 @@
 import random
 
+total_turns = []
+
 def play_again():
 
     turns = ["Rock", "Paper", "Scissors"]
+
     human_turn = input("Input human turn: ")
     computer_turn = random.choice(turns)
+
     print(f"Human: {human_turn} vs. Computer: {computer_turn}")
 
     if human_turn == "Rock" and computer_turn == "Scissors":
@@ -26,3 +30,6 @@ while True:
         break
     else:
         print("Enter a valid answer.")
+
+    total_turns.append(restart)
+    print(f"You have played {len(total_turns)} times.")
